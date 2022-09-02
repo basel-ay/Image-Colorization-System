@@ -14,6 +14,8 @@ We train a CNN to map from a grayscale input to a distribution over quantized co
 
 ```
 pip install -r requirements.txt
+```
+```
 python app.py -i imgs/1.jpg
 ```
 

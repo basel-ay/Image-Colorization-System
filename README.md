@@ -10,6 +10,18 @@ We train a CNN to map from a grayscale input to a distribution over quantized co
 
 ![image](https://user-images.githubusercontent.com/64821137/188229119-fba122d4-5041-4a2b-a9b1-262a5a5efff7.png)
 
+To train the network start with the ImageNet dataset converting all images from the RGB color space to the `Lab color space.`
+
+Similar to the RGB color space, `the Lab color space has three channels. But unlike the RGB color space, Lab encodes color information differently:`
+
+* The L channel encodes lightness intensity only
+* The a channel encodes green-red.
+* And the b channel encodes blue-yellow
+
+Since the L channel encodes only the intensity, we can use the `L channel as our grayscale input to the network.`
+
+From there the network `must learn to predict the a and b channels.` Given the input L channel and the predicted ab channels we can then form our final output image.
+
 ## Results
 
 ```

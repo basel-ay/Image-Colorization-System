@@ -4,8 +4,6 @@ Image colorization is the process of assigning colors to a grayscale image to ma
 
 ![image](https://user-images.githubusercontent.com/64821137/188227907-666ff003-9e30-40b9-b3a7-b5df11df29b0.png)
 
-The system is implemented as a feed-forward pass in a CNN at test time and is trained on over a million color images. Evaluate the algorithm using a colorization Turing test asking human participants to choose between a generated and ground truth color image.
-
 ## Approach
 
 We train a CNN to map from a grayscale input to a distribution over quantized color value outputs using the architecture shown. 

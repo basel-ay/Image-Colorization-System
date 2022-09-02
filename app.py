@@ -30,9 +30,6 @@ if(opt.use_gpu):
 
 # colorizer outputs 256x256 ab map
 # resize and concatenate to original L channel
-img_bw = postprocess_tens(tens_l_orig, torch.cat(
-    (0*tens_l_orig, 0*tens_l_orig), dim=1))
-
 out_img_eccv16 = postprocess_tens(
     tens_l_orig, colorizer_eccv16(tens_l_rs).cpu())
 

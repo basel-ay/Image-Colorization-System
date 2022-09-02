@@ -19,3 +19,4 @@ python app.py -i imgs/1.jpg
 ```
 
 ![image](https://user-images.githubusercontent.com/64821137/188229793-2f3d5851-51f2-4611-ae49-0d87597513f0.png)
+
